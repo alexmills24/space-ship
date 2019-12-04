@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "test": "scripts/test"
+  },
+  "name": "space-ship",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alexmills24/space-ship.git",
+  "license": "MIT"
+}
