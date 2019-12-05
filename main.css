@@ -1,1 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-image: url(images/space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
 
+#game-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mothership > *,
+.attack-ship > *,
+.defence-ship > * {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.mothership {
+  width: 95vw;
+}
+
+.defence-ship {
+  width: 19vw;
+}
+
+.attack-ship {
+  width: 11vw;
+}
+
+#mothership,
+#defence-ship,
+#attack-ship {
+  height: 100px;
+}
+button {
+  height: 50px;
+  width: 150px;
+  background-image: url(images/space.jpg);
+  background-size: cover;
+  color: white;
+}

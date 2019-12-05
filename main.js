@@ -10,7 +10,7 @@ class Ship {
     this.life >= this.damage ? this.life -= this.damage : this.life = 0;
   }
   render() {
-    return `<div id="game-area"><img src=${this.image} alt=${this.name}/><p>${this.name}</p> <p>${this.life}</p> <p>${this.damage}</p></div>`
+    return `<div class=${this.name.toLowerCase()}><img src=${this.image} alt=${this.name} id=${this.name.toLowerCase()} /><p>${this.name}</p> <p>${this.life}</p> <p>${this.damage}</p></div>`
   };
 };
 
@@ -18,19 +18,19 @@ let ships = [];
 
 const makeMothership = () => {
   for (index = 0; index < 1; index++) {
-    ships.push(new Ship("Mothership", 100, 9, "./images/mothership.jpg"));
+    ships.push(new Ship("Mothership", 100, 9, "./images/mothership.png"));
   }
 }
 
 const makeDefence = () => {
   for (index = 0; index < 5; index++) {
-    ships.push(new Ship("Defence-ship", 80, 10, "./images/defenceship.jpg"));
+    ships.push(new Ship("Defence-ship", 80, 10, "./images/defenceship.png"));
   }
 };
 
 const makeAttack = () => {
   for (index = 0; index < 8; index++) {
-    ships.push(new Ship("Attack-ship", 45, 12, "./images/attackship.jpg"));
+    ships.push(new Ship("Attack-ship", 45, 12, "./images/attackship.png"));
   }
 };
 
